@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+:root{
+  --brand-red: #DD4D4A;
+  --brand-blue:#1290D2;
+  --brand-dark:#37393B;
+  --brand-ice: #92C8E3;
+}
