@@ -41,7 +41,7 @@ export default function Services() {
       <section className="py-12">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
           <div>
-            <h1 className="text-4xl font-extrabold tracking-tight text-[var(--brand-dark)]">
+            <h1 className="text-4xl font-extrabold tracking-tight text-(--brand-dark)">
               Services
             </h1>
             <p className="mt-3 text-slate-600 max-w-2xl">
@@ -51,7 +51,7 @@ export default function Services() {
 
           <Link
             to="/contact"
-            className="inline-flex justify-center rounded-2xl bg-[var(--brand-blue)] px-5 py-4 text-base font-extrabold text-white hover:opacity-90"
+            className="inline-flex justify-center rounded-2xl bg-(--brand-blue) px-5 py-4 text-base font-extrabold text-white hover:opacity-90"
           >
             Request a Free Estimate
           </Link>
@@ -71,8 +71,8 @@ export default function Services() {
                   className="absolute inset-0 h-full w-full object-cover"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/15 to-transparent" />
-                <div className="absolute left-4 top-4 h-2 w-14 rounded-full bg-[var(--brand-blue)]/90" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/15 to-transparent" />
+                <div className="absolute left-4 top-4 h-2 w-14 rounded-full bg-(--brand-blue)/90" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="text-white text-xl font-extrabold">{s.title}</div>
                   <div className="text-white/90 text-sm">{s.desc}</div>
@@ -84,7 +84,7 @@ export default function Services() {
                   <div className="text-sm font-semibold text-slate-700">
                     Tap for estimate
                   </div>
-                  <div className="text-sm font-extrabold text-[var(--brand-blue)] group-hover:translate-x-0.5 transition">
+                  <div className="text-sm font-extrabold text-(--brand-blue) group-hover:translate-x-0.5 transition">
                     →
                   </div>
                 </div>
@@ -94,7 +94,7 @@ export default function Services() {
         </div>
 
         <div className="mt-10 rounded-3xl border border-slate-200 bg-slate-50 p-8">
-          <h2 className="text-2xl font-extrabold text-[var(--brand-dark)]">Service Areas</h2>
+          <h2 className="text-2xl font-extrabold text-(--brand-dark)">Service Areas</h2>
           <p className="mt-2 text-slate-600">
             Based in {CITY}. We commonly serve:
           </p>
@@ -103,7 +103,7 @@ export default function Services() {
             {SERVICE_AREAS.map((c) => (
               <div
                 key={c}
-                className="rounded-2xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-[var(--brand-dark)]"
+                className="rounded-2xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-(--brand-dark)"
               >
                 {c}
               </div>
@@ -117,7 +117,7 @@ export default function Services() {
           <div className="mt-6">
             <Link
               to="/contact"
-              className="inline-flex w-full sm:w-auto justify-center rounded-2xl bg-[var(--brand-blue)] px-5 py-4 text-base font-extrabold text-white hover:opacity-90"
+              className="inline-flex w-full sm:w-auto justify-center rounded-2xl bg-(--brand-blue) px-5 py-4 text-base font-extrabold text-white hover:opacity-90"
             >
               Request Estimate
             </Link>

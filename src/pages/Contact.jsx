@@ -54,7 +54,7 @@ export default function Contact() {
       />
 
       <section className="py-12">
-        <h1 className="text-4xl font-extrabold tracking-tight text-[var(--brand-dark)]">Contact</h1>
+        <h1 className="text-4xl font-extrabold tracking-tight text-(--brand-dark)">Contact</h1>
         <p className="mt-3 text-slate-600 max-w-2xl">
           Tell us what’s going on and we’ll get back to you as soon as possible.
           For urgent issues, calling is the fastest option.
@@ -63,14 +63,14 @@ export default function Contact() {
         <div className="mt-10 grid lg:grid-cols-2 gap-8">
           {/* Info card */}
           <div className="rounded-3xl border border-slate-200 bg-white p-7">
-            <h2 className="text-xl font-extrabold text-[var(--brand-dark)]">Reach Us</h2>
+            <h2 className="text-xl font-extrabold text-(--brand-dark)">Reach Us</h2>
 
             <div className="mt-5 space-y-4 text-slate-700">
               <div>
                 <div className="text-sm text-slate-600">Phone</div>
                 <a
                   href={`tel:${PHONE}`}
-                  className="text-lg font-extrabold text-[var(--brand-blue)] hover:underline"
+                  className="text-lg font-extrabold text-(--brand-blue) hover:underline"
                 >
                   {DISPLAY_PHONE}
                 </a>
@@ -78,17 +78,17 @@ export default function Contact() {
 
               <div>
                 <div className="text-sm text-slate-600">Location</div>
-                <div className="font-semibold text-[var(--brand-dark)]">{CITY}</div>
+                <div className="font-semibold text-(--brand-dark)">{CITY}</div>
               </div>
 
               <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                <div className="text-sm font-extrabold text-[var(--brand-dark)]">Fastest Response</div>
+                <div className="text-sm font-extrabold text-(--brand-dark)">Fastest Response</div>
                 <div className="mt-1 text-sm text-slate-600">
                   Call us and we’ll help you choose the right next step.
                 </div>
                 <a
                   href={`tel:${PHONE}`}
-                  className="mt-3 inline-flex w-full justify-center rounded-2xl bg-[var(--brand-blue)] px-4 py-3 text-sm font-extrabold text-white hover:opacity-90"
+                  className="mt-3 inline-flex w-full justify-center rounded-2xl bg-(--brand-blue) px-4 py-3 text-sm font-extrabold text-white hover:opacity-90"
                 >
                   Tap to Call
                 </a>
@@ -98,7 +98,7 @@ export default function Contact() {
 
           {/* Form */}
           <form onSubmit={onSubmit} className="rounded-3xl border border-slate-200 bg-white p-7">
-            <h2 className="text-xl font-extrabold text-[var(--brand-dark)]">Request Service / Estimate</h2>
+            <h2 className="text-xl font-extrabold text-(--brand-dark)">Request Service / Estimate</h2>
 
             {/* honeypot */}
             <input className="hidden" name="company_website" autoComplete="off" tabIndex="-1" />
@@ -142,7 +142,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={status.state === "loading"}
-              className="mt-5 w-full rounded-2xl bg-[var(--brand-blue)] px-5 py-4 text-base font-extrabold text-white hover:opacity-90 disabled:opacity-60"
+              className="mt-5 w-full rounded-2xl bg-(--brand-blue) px-5 py-4 text-base font-extrabold text-white hover:opacity-90 disabled:opacity-60"
             >
               {status.state === "loading" ? "Sending…" : "Send Request"}
             </button>
