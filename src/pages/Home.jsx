@@ -27,7 +27,7 @@ export default function Home() {
     <div className="mx-auto max-w-6xl px-4">
       <div className="max-w-2xl">
         <div className="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-extrabold text-(--brand-dark)">
-          Serving {CITY} and surrounding areas
+          Serving Upstate SC and surrounding areas
         </div>
 
         <h1 className="mt-4 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white">
